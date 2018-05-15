@@ -1,0 +1,6 @@
+{
+    "This page is a showcase page for how a localised page could look.": "Deze pagina is een voorbeeld van hoe een vertaalde pagina er kan uitzien.",
+    "We use the native Laravel localization support and the laravel-localization package.": "We maken gebruik van de native Laravel localization support en de laravel-localization package.",
+    "This is a testpage": "Dit is een testpagina"
+
+}

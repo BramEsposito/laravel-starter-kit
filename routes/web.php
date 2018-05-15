@@ -34,3 +34,18 @@ Route::prefix('admin')->namespace('Admin')->middleware(['auth','demo'])->group(f
     Route::resource('files','FileController');
     Route::resource('file-groups','FileGroupController');
 });
+
+Route::group(
+[
+	'prefix' => LaravelLocalization::setLocale(),
+	'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+],
+function()
+{
+	/** ADD ALL LOCALIZED ROUTES INSIDE THIS GROUP **/
+	Route::get('translations',function(){
+		return View::make('translations');
+	});
+});
+
+/** OTHER PAGES THAT SHOULD NOT BE LOCALIZED **/

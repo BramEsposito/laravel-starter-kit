@@ -150,6 +150,7 @@ return [
         /*
          * Package Service Providers...
          */
+        App\Providers\ConfigServiceProvider::class,
 
         /*
          * Application Service Providers...
